@@ -1,0 +1,35 @@
+Deft Window Organizer
+
+This is a tray application that adds hot keys to manage windows. If you have auto hot key installed, you can run Deft.ahk, otherwise you can run the executable.
+
+There are two ways to perform most actions. One way is centered around the windows key modifier and the arrow keys. The second way is centered around using the CapsLock key as a modifier combined with IJKL (inverse "T", like the arrow keys). The second way allows you to manage windows with your hands on the home row and is especially useful on laptop keyboards.
+
+There are 9 pre-defined positions...
+Left: width = 50%, height = 100%, left corner = 0,0
+Right: width = 50%, height = 100%, left corner = 50%,0
+Top: width = 100%, height = 50%, left corner = 0,0
+Bottom: width = 100%, height = 50%, left corner = 0,50%
+TopLeft: width = 50%, height = 50%, left corner = 0,0
+TopRight: width = 50%, height = 50%, left corner = 50%,0
+BottomLeft: width = 50%, height = 50%, left corner = 0,50%
+BottomRight: width = 50%, height = 50%, left corner = 50%,50%
+Home: width = 90%, height = 90%, left corner = 5%,5%
+
+There are 15 actions...
+Win+Left or Caps+J: move to left position
+Win+Right or Caps+L: move to right position
+Win+Up or Caps+I: Move to top position
+Win+Down or Caps+K: Move to bottom position
+Win+Left+Up or Caps+J+I: move to top left position
+Win+Right+Up or Caps+L+I: move to top right position
+Win+Left+Down or Caps+J+K: move to bottom left position
+Win+Right+Down or Caps+L+K: move to bottom right position
+Win+Home of Win+Left+Right or Caps+J+L: move to home position
+Win+End or Caps+U or Caps+O: move to next monitor
+Win+PageUp or Caps+Y: maximize/restore
+Win+PageDown or Caps+H: minimize
+Win+Insert: set to "always on top"
+Win+Delete: remove "always on top"
+Win+Backspace: move window to its last non-predefined location
+
+*Thanks to FAMFAMFAM for the free icon! (http://www.famfamfam.com/lab/icons/silk/)
