@@ -1,8 +1,13 @@
 Deft Window Organizer
 
-This is a tray application that adds hot keys to manage windows. If you have auto hot key installed, you can run Deft.ahk, otherwise you can run the executable.
+This is a tray application that adds hot keys to manage windows. If you have auto
+hot key installed, you can run Deft.ahk, otherwise you can run the executable.
 
-There are two ways to perform most actions. One way is centered around the windows key modifier and the arrow keys. The second way is centered around using the CapsLock key as a modifier combined with IJKL (inverse "T", like the arrow keys). The second way allows you to manage windows with your hands on the home row and is especially useful on laptop keyboards.
+There are two ways to perform most actions. One way is centered around the windows
+key modifier and the arrow keys. The second way is centered around using the CapsLock
+key as a modifier combined with IJKL (inverse "T", like the arrow keys). The second
+way allows you to manage windows with your hands on the home row and is especially
+useful on laptop keyboards.
 
 There are 9 pre-defined positions...
 Left: width = 50%, height = 100%, left corner = 0,0
