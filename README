@@ -20,7 +20,7 @@ BottomLeft: width = 50%, height = 50%, left corner = 0,50%
 BottomRight: width = 50%, height = 50%, left corner = 50%,50%
 Home: width = 90%, height = 90%, left corner = 5%,5%
 
-There are 15 actions...
+There are 16 actions...
 Win+Left or Caps+J: move to left position
 Win+Right or Caps+L: move to right position
 Win+Up or Caps+I: Move to top position
@@ -36,5 +36,8 @@ Win+PageDown or Caps+H: minimize
 Win+Insert: set to "always on top"
 Win+Delete: remove "always on top"
 Win+Backspace: move window to its last non-predefined location
+Win+Left+Up+Right+Down:
+	causes deft to rescan all monitors and resolutions to redefine all positions.
+	use this if you change resolution, add a monitor, undock, etc.
 
 *Thanks to FAMFAMFAM for the free icon! (http://www.famfamfam.com/lab/icons/silk/)
