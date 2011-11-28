@@ -1,5 +1,10 @@
 StartUp() {
     InitializePositions()
+
+    ;listen for WM_DISPLAYCHANGE
+    OnMessage(0x007E, "InitializePositions")
+    
+    ;clean up global variables every 15 minutes
     SetTimer, CleanUp, 900000
 
     CleanUp:
