@@ -1,9 +1,12 @@
 StartUp() {
     InitializePositions()
-
-    ;listen for WM_DISPLAYCHANGE
-    OnMessage(0x007E, "InitializePositions")
     
+    ;listen for WM_DISPLAYCHANGE - handles resolution changes
+    OnMessage(0x007E, "InitializePositions")
+
+    ;listen for WM_SETTINGCHANGE - handles task bar moving/resizing
+    OnMessage(0x001A, "InitializePositions")
+
     ;clean up global variables every 15 minutes
     SetTimer, CleanUp, 900000
 
