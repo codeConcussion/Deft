@@ -36,8 +36,6 @@ Win+PageDown or Caps+H: minimize
 Win+Insert: set to "always on top"
 Win+Delete: remove "always on top"
 Win+Backspace: move window to its last non-predefined location
-Win+Left+Up+Right+Down:
-	causes deft to rescan all monitors and resolutions to redefine all positions.
-	use this if you change resolution, add a monitor, undock, etc.
+Win+Left+Up+Right+Down: causes deft to rescan all monitors and resolutions to redefine all positions.
 
 *Thanks to FAMFAMFAM for the free icon! (http://www.famfamfam.com/lab/icons/silk/)
