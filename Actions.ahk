@@ -66,14 +66,22 @@ MoveToLocation(location) {
 }
 
 MoveToNextMonitor() {
+    MoveToAdjacentMonitor(1)
+}
+
+MoveToPreviousMonitor() {
+    MoveToAdjacentMonitor(-1)    
+}
+
+MoveToAdjacentMonitor(relationToCurrent) {
     global
 
     local current := GetCurrentMonitor()
-    local next := GetNextMonitor()
+    local adjacent := GetAdjacentMonitor(relationToCurrent)
 
-    if (current != next) {
+    if (current != adjacent) {
         local position := GetCurrentPositionIndex() 
-        local location := position > 0 ? _position%next%_%position% : GetNextPosition()
+        local location := position > 0 ? _position%adjacent%_%position% : GetAdjacentPosition(relationToCurrent)
         local isMaximized := IsMaximized()
 
         MoveToLocation(location)

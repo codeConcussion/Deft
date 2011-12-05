@@ -63,17 +63,20 @@ GetCurrentMonitor() {
     return GetMonitorAt(x, y)
 }
 
-GetNextMonitor() {
+GetAdjacentMonitor(relationToCurrent) {
     count := GetMonitorCount()
     current := GetCurrentMonitor()
-    next := current + 1
-
-    if (next > count) {
+    adjacent := current + relationToCurrent
+    
+    if (adjacent > count) {
         return 1
     }
+    else if (adjacent < 1) {
+        return count
+    }
     else {
-        return %next%
-    }    
+        return %adjacent%
+    }   
 }
 
 GetMonitorAt(x, y) {
@@ -146,21 +149,21 @@ GetCurrentPosition() {
     return %position%
 }
 
-GetNextPosition() {
+GetAdjacentPosition(relationToCurrent) {
     WinGetPos, left, top, width, height, A
 
     current := GetCurrentMonitor()
-    next := GetNextMonitor()
+    adjacent := GetAdjacentMonitor(relationToCurrent)
 
     leftRatio := (left - GetLeft(current)) / GetWidth(current)
     topRatio := (top - GetTop(current)) / GetHeight(current)
     widthRatio := width / GetWidth(current)
     heightRatio := height / GetHeight(current)
 
-    left := GetLeft(next) + Floor(GetWidth(next) * leftRatio)
-    top := GetTop(next) + Floor(GetHeight(next) * topRatio)
-    width := Floor(GetWidth(next) * widthRatio)
-    height := Floor(GetHeight(next) * heightRatio)
+    left := GetLeft(adjacent) + Floor(GetWidth(adjacent) * leftRatio)
+    top := GetTop(adjacent) + Floor(GetHeight(adjacent) * topRatio)
+    width := Floor(GetWidth(adjacent) * widthRatio)
+    height := Floor(GetHeight(adjacent) * heightRatio)
 
     position = %left%,%top%,%width%,%height%
     return %position%

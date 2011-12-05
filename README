@@ -30,7 +30,8 @@ Win+Right+Up or Caps+L+I: move to top right position
 Win+Left+Down or Caps+J+K: move to bottom left position
 Win+Right+Down or Caps+L+K: move to bottom right position
 Win+Home of Win+Left+Right or Caps+J+L: move to home position
-Win+End or Caps+U or Caps+O: move to next monitor
+Win+End or Caps+O: move to next monitor
+Win+Shift+End or Caps+U: move to previous monitor
 Win+PageUp or Caps+Y: maximize/restore
 Win+PageDown or Caps+H: minimize
 Win+Insert: set to "always on top"
